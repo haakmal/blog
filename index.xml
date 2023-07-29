@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dr Daft</title><link>https://blog.haiderali.co/</link><description>Recent content on Dr Daft</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.haiderali.co/index.xml" rel="self" type="application/rss+xml"/><item><title>Knowledge Management with Obsidian</title><link>https://blog.haiderali.co/post/obsidian-knowledge-management/</link><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate><author>Dr Daft</author><guid>https://blog.haiderali.co/post/obsidian-knowledge-management/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dr Daft</title><link>https://blog.hakmal.com/</link><description>Recent content on Dr Daft</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.hakmal.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Knowledge Management with Obsidian</title><link>https://blog.hakmal.com/post/obsidian-knowledge-management/</link><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate><author>Dr Daft</author><guid>https://blog.hakmal.com/post/obsidian-knowledge-management/</guid><description>
 &lt;p>Retaining information is difficult at the best of times let alone considering what happens to us with age. I have an obscure fear of loosing my mind! As silly as that might sound there is a word for it &lt;em>dementophobia&lt;/em> or the fear of madness. Perhaps because of seeing my grandmother slowly rewrite their own past before my eyes or some other as of yet unearthed psychological reason, I do find myself thinking about this very phobia and what would become. I&amp;rsquo;ve dedicated a portion of my life to knowledge and education so yes I would like to retain that knowledge, but what happens when it&amp;rsquo;s too much?&lt;/p>
 &lt;p>I love referring back to John Koenigs&amp;rsquo;s &lt;em>Dictionary of Obscure Sorrows&lt;/em> for possible ways to define the human condition because the English language is too clinical. I come from a culture of metaphors, Urdu the language I speak is filled with it and feels poetic for this reason. While there are too many words in Koenig&amp;rsquo;s work that might fit my human condition in the myriad obscurities that make up who I am, I feel what works best with me in the context of this writing is &lt;em>koinophobia&lt;/em>.&lt;/p>
 &lt;blockquote>
@@ -20,7 +20,7 @@ The second-brain I always longed for
 &lt;p>In my last post on knowledge management I went on about how my profession demanded that I write and expand on knowledge. Clearly that isn&amp;rsquo;t the only reason why I&amp;rsquo;ve opted for using something like Obsidian. It is deeply personal as well and rooted in this interest of improving myself. I kept paper notes for a long time and still do, the feel of lead and paper are something no Apple pencil can ever recreate, Obsidian acts in a different way it enters this fold as a means to make sense of the scribbles I&amp;rsquo;ve put down in my notebook.&lt;/p>
 &lt;p>&lt;figure>
 &lt;img loading="lazy"
-src="https://blog.haiderali.co/img/Obsidian.webp"
+src="https://blog.hakmal.com/img/Obsidian.webp"
 alt=""
 title="My research vault in Obsidian open to a random project" />
 &lt;figcaption>My research vault in Obsidian open to a random project&lt;/figcaption>
@@ -62,7 +62,7 @@ end
 &lt;p>The moon of course has more land area but it is a sphere and thus has an equatorial diameter which subsequently is is smaller than the width of Australia.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Why should knowledge management matter?</title><link>https://blog.haiderali.co/post/why-manage-knowledge/</link><pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate><author>Dr Daft</author><guid>https://blog.haiderali.co/post/why-manage-knowledge/</guid><description>
+&lt;/div></description></item><item><title>Why should knowledge management matter?</title><link>https://blog.hakmal.com/post/why-manage-knowledge/</link><pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate><author>Dr Daft</author><guid>https://blog.hakmal.com/post/why-manage-knowledge/</guid><description>
 &lt;p>I had already planned on making the first few posts of my blog about how I eventually set up the whole thing. This was partly because I would have something to quickly write about while it was still fresh in my mind, but also so I could stick to a habit of writing. I don&amp;rsquo;t really have a schedule in mind for how often I intend to post here (yet), but I&amp;rsquo;m hoping that with these first few technical posts I can get in the swing of it better.&lt;/p>
 &lt;p>While writing this I quickly realised I had a lot more to say! There is a backstory here, a process to the madness that ends in my writing setup so I will have to break this up into pieces now. This is the first post in a multi-part series about my &amp;lsquo;writing environment&amp;rsquo; which itself is rather broad since I jump between multiple programs and also work across different platforms. I own a Windows machine but oddly in the office I&amp;rsquo;ve always been given MacOS. While that doesn&amp;rsquo;t make much difference in terms of this setup, it has meant that I&amp;rsquo;ve had to find systems that were cross platform from the start. A lot of trial and error has gone into what I&amp;rsquo;m still developing here but my current setup is in many ways sustainable (for me at least).&lt;/p>
 &lt;h2 id="the-breakdown">
@@ -77,7 +77,7 @@ The breakdown
 &lt;/h2>
 &lt;p>Everything that I mention in this series can be repurposed as you like, these platforms are all &lt;abbr title="Free Open Source Software">FOSS&lt;/abbr> after all. I plan on covering a number of topics ahead with some posts being about the build up and background, while others more technical. Since my approach towards writing and ultimately knowledge management are tied into developing your own ethos I see this series as jumping between research and life skills. Hopefully whoever reads it may find some benefit. Here&amp;rsquo;s a breakdown of how I see this unfolding:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://blog.haiderali.co/post/why-manage-knowledge/">Why should knowledge management matter?&lt;/a> &lt;em>(this post)&lt;/em>&lt;/li>
+&lt;li>&lt;a href="https://blog.hakmal.com/post/why-manage-knowledge/">Why should knowledge management matter?&lt;/a> &lt;em>(this post)&lt;/em>&lt;/li>
 &lt;li>Creating a knowledge management hub with Obsidian &lt;em>(soon)&lt;/em>&lt;/li>
 &lt;li>Setting up a blog using Hugo and Git &lt;em>(soon)&lt;/em>&lt;/li>
 &lt;/ul>
@@ -92,7 +92,7 @@ d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.
 &lt;/a>
 The woes and wants of knowledge management
 &lt;/h2>
-&lt;p>In my &lt;a href="https://blog.haiderali.co/post/hello-world/">last post&lt;/a> I went on about how there is this pressure on academics to write and continue to write in their fields all moving towards that one point of unique knowledge contribution. Having a good clean writing setup that works for you accentuates that experience making it &lt;em>(a)&lt;/em> worth while, and &lt;em>(b)&lt;/em> dare I say enjoyable. Not that writing isn&amp;rsquo;t fun for some people, but when it comes to academic writing it can get dry. It all starts by being able to gather information that you&amp;rsquo;ve collected through research.&lt;/p>
+&lt;p>In my &lt;a href="https://blog.hakmal.com/post/hello-world/">last post&lt;/a> I went on about how there is this pressure on academics to write and continue to write in their fields all moving towards that one point of unique knowledge contribution. Having a good clean writing setup that works for you accentuates that experience making it &lt;em>(a)&lt;/em> worth while, and &lt;em>(b)&lt;/em> dare I say enjoyable. Not that writing isn&amp;rsquo;t fun for some people, but when it comes to academic writing it can get dry. It all starts by being able to gather information that you&amp;rsquo;ve collected through research.&lt;/p>
 &lt;p>A trusty notebook and pencil served me well for years and still do. I did always find myself hesitant when taking notes because I would know that down the line I would forget about this note. To me the act of writing something down is in effect adding it to a short-term memory, not necessarily something that I will return or be reminded of. Like many others I too had notebooks full of content that was never realised. Knowledge management starts from there and in most cases often ends there as well which where systems like the one I&amp;rsquo;m describing today may come into play.&lt;/p>
 &lt;p>There are several such systems with the more popular one being the &lt;a href="https://zettelkasten.de/introduction">Zettelkasten&lt;/a> approach. I just can&amp;rsquo;t manage that, I find it it taxing and complex for my brain to keep track of! To those who have, I see that as impressive and I&amp;rsquo;m very certain you&amp;rsquo;ve reached a point of efficiency that is almost machine like. Those who are not aware of the zettelkasten approach, it was developed by a social scientist Niklas Luhmann in an attempt to over power his productivity.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> I&amp;rsquo;m a very patient person in most cases, but this approach was beyond me.&lt;/p>
 &lt;p>Having a penchant to tinker and get slightly obsessed with the process (as I often do), will certainly help when setting up a writing space that is for all purposes designed to be efficient. That level of tinkering was needed for zettelkasten though the redundancy of tasks made me feel less productive personally. Perhaps I approached it incorrectly and maybe down the line I might try again but in the way I practiced it a zettelkasten approach did not feel necessary; in that regard I&amp;rsquo;d like to think I&amp;rsquo;m somewhere on the edge of this knowledge management spectrum. What I needed was a system that was efficient and worked for my needs without the complexity of having to manage it as well. For some that might be as simple as setting up a Medium account or maybe Blogspot (that is a still a thing right?) with a content management system, for others it may very well be something as focused as Luhmann&amp;rsquo;s approach. For me it needed to be more bespoke and almost automated.&lt;/p>
@@ -187,7 +187,7 @@ Is knowledge management needed?
 &lt;p>Sadly the hackable development environment has been &lt;a href="https://github.blog/2022-06-08-sunsetting-atom/">archived&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Obligatory 'hello world' post</title><link>https://blog.haiderali.co/post/hello-world/</link><pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate><author>Dr Daft</author><guid>https://blog.haiderali.co/post/hello-world/</guid><description>
+&lt;/div></description></item><item><title>Obligatory 'hello world' post</title><link>https://blog.hakmal.com/post/hello-world/</link><pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate><author>Dr Daft</author><guid>https://blog.hakmal.com/post/hello-world/</guid><description>
 &lt;h2 id="what-is-this-place">
 &lt;a href="#what-is-this-place" class="anchor">
 &lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
@@ -251,13 +251,13 @@ What to expect ahead
 &lt;/h2>
 &lt;p>I&amp;rsquo;m planning on writing more often in this space and as mentioned separating content and thoughts. I&amp;rsquo;ve always been interested in organising myself towards efficiency and I&amp;rsquo;ve recently been enamoured by &lt;a href="https://obsidian.md/">Obsidian&lt;/a> a knowledge management app (basically over powered note taking). I highly recommend it, I use it for managing my student information, classwork, research work, and also personal life. In fact, this post I wrote in Obsidian as well. I&amp;rsquo;ll definitely be dropping some of my experiences with knowledge management in here in the coming days.&lt;/p>
 &lt;p>The making of this blog has been a learning activity in itself and I&amp;rsquo;ll certainly share what I&amp;rsquo;ve learned in my next post. As a researcher I&amp;rsquo;ve learned and explored many ways to support my academic journey which will also find a home here. I suppose that&amp;rsquo;s the thing in the end, what to to expect is a very board and vague thing to say or even suggest. Though I also don&amp;rsquo;t like the term &lt;em>&amp;rsquo;expect&amp;rsquo;&lt;/em>, it has an air of anticipation, anxiety, even urgency which always makes me uncomfortable. What if whatever comes ahead isn&amp;rsquo;t to your &amp;rsquo;expectations&amp;rsquo; (no pun)?&lt;/p>
-&lt;p>I think I&amp;rsquo;ll be playing it by ear. I&amp;rsquo;ve often found that no matter how much you can plan and manage things, &lt;em>things&lt;/em> have a tendency of getting away as well.&lt;/p></description></item><item><title>How to tell a horse from its 💩</title><link>https://blog.haiderali.co/post/how-to-tell-a-horse/</link><pubDate>Fri, 25 Dec 2015 00:00:00 +0000</pubDate><author>Dr Daft</author><guid>https://blog.haiderali.co/post/how-to-tell-a-horse/</guid><description>
+&lt;p>I think I&amp;rsquo;ll be playing it by ear. I&amp;rsquo;ve often found that no matter how much you can plan and manage things, &lt;em>things&lt;/em> have a tendency of getting away as well.&lt;/p></description></item><item><title>How to tell a horse from its 💩</title><link>https://blog.hakmal.com/post/how-to-tell-a-horse/</link><pubDate>Fri, 25 Dec 2015 00:00:00 +0000</pubDate><author>Dr Daft</author><guid>https://blog.hakmal.com/post/how-to-tell-a-horse/</guid><description>
 &lt;blockquote>
 &lt;p>&lt;strong>Sidebar:&lt;/strong> This post was originally on Medium before I brought some needed organisation into my life. It is a rant and from a dark past, I&amp;rsquo;ll leave it at that.&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;figure>
 &lt;img loading="lazy"
-src="https://blog.haiderali.co/img/me4211.webp"
+src="https://blog.hakmal.com/img/me4211.webp"
 alt=""
 title="This is me, with an ominous hand over my head. Back then I didn’t know the many meanings of shit that I do today." />
 &lt;figcaption>This is me, with an ominous hand over my head. Back then I didn’t know the many meanings of shit that I do today.&lt;/figcaption>
@@ -286,7 +286,7 @@ Humans tend to enjoy the subtle art of nitpicking.
 &lt;p>No, this metaphorical stead in the shape of all your worthless imaginings of relations that you think you can count on when the time is rough not only throws you down when you least expect it, but it also makes sure it leaves a long and wide trail of feaces for you to land on; and being a very tricky beast it also manages to trample over you at the same time.&lt;/p>
 &lt;p>&lt;figure>
 &lt;img loading="lazy"
-src="https://blog.haiderali.co/img/me342.webp"
+src="https://blog.hakmal.com/img/me342.webp"
 alt=""
 title="This is me later, when I used to give a shit. See how it’s written on my face?" />
 &lt;figcaption>This is me later, when I used to give a shit. See how it’s written on my face?&lt;/figcaption>
@@ -300,7 +300,7 @@ title="This is me later, when I used to give a shit. See how it’s written on m
 &lt;p>It might seem like the end and there’s always the whole, &lt;em>“I’m ending this chapter once and for all!”&lt;/em> moment you go through, but sadly from then on it’s not necessarily smooth sailing.&lt;/p>
 &lt;p>&lt;figure>
 &lt;img loading="lazy"
-src="https://blog.haiderali.co/img/me0232.webp"
+src="https://blog.hakmal.com/img/me0232.webp"
 alt=""
 title="This is me laterer than later, as you can see it’s both fifteen past six and a quarter to eight. I clearly do not give a shit here. It’s the subtle things that make the difference you see." />
 &lt;figcaption>This is me laterer than later, as you can see it’s both fifteen past six and a quarter to eight. I clearly do not give a shit here. It’s the subtle things that make the difference you see.&lt;/figcaption>
