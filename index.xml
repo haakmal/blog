@@ -78,7 +78,7 @@ The current setup
 &lt;/h3>
 &lt;p>There are multiple cogs to this machine and I will be breaking down each part of the setup in coming posts, but this is where I currently am with my &amp;lsquo;perfect-ish&amp;rsquo; setup. Obsidian works in vaults which is a fancy name for root folders, this blog is part of a separate vault as is my teaching and research work. There is cloud backup as well as Git facilitated repositories for both collaborative work and automation where needed. I have other vaults as well but this series will focus mostly on these three. This diagram shows how it all works as an overview&lt;/p>
 &lt;div class="mermaid">
-`flowchart TB
+flowchart TB
 A(Vault); B(Vault); C(Vault)
 Aa(Student DB); Ab(Pedagogy); Ac(Courses DB)
 Ba(Concepts); Bb(Writing); Bc(Supervision)
@@ -98,7 +98,7 @@ subgraph Teaching
 direction LR
 A-->Aa &amp; Ab &amp; Ac
 end
-Teaching &amp; Research===>id((Cloud))`
+Teaching &amp; Research===>id((Cloud))
 &lt;/div>
 &lt;p>Each vault is self contained and I normally don&amp;rsquo;t need to have them mixing together, though with Obsidian I can cross-access them if I want to. Obsidian&amp;rsquo;s UI is simple and to the point, at the same time there is enough room for making it purposeful. There is an additional layer of automation happening within the vaults themselves to support my workflow, things like maintaining similarly data across for fetching and searching notes. It isn&amp;rsquo;t until each vault is opened and worked in that things start making sense and the connections come together. The need for manual retention is removed through using plugins like &lt;a href="https://github.com/marcusolsson/obsidian-projects">Projects&lt;/a>, &lt;a href="https://github.com/RafaelGB/obsidian-db-folder">DB Folder&lt;/a>, and &lt;a href="https://github.com/blacksmithgu/obsidian-dataview">Dataview&lt;/a> all I&amp;rsquo;ll be exploring in a future Obsidian focused post. There are also some quality of life plugins on top of these to take the vaults from being simple text oriented databases to powerful content creation engines.&lt;/p>
 &lt;p>I was more or less trying to achieve this same thing through Atom before but was unsuccessful. Ulysses did long-form writing quite well though was not very useful for other everyday work. Atom did several things well but nothing well enough. Obsidian on the other hand gives me enough freedom to actually start managing knowledge, an opportunity to learn from what I&amp;rsquo;ve gathered. The difference is night and day at times.&lt;/p>
