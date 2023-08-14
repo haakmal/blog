@@ -1,68 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dr Daft</title><link>https://blog.hakmal.com/</link><description>Recent content on Dr Daft</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.hakmal.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Knowledge Management with Obsidian</title><link>https://blog.hakmal.com/post/obsidian-knowledge-management/</link><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate><author>Dr Daft</author><guid>https://blog.hakmal.com/post/obsidian-knowledge-management/</guid><description>
-&lt;p>Retaining information is difficult at the best of times let alone considering what happens to us with age. I have an obscure fear of loosing my mind! As silly as that might sound there is a word for it &lt;em>dementophobia&lt;/em> or the fear of madness. Perhaps because of seeing my grandmother slowly rewrite their own past before my eyes or some other as of yet unearthed psychological reason, I do find myself thinking about this very phobia and what would become. I&amp;rsquo;ve dedicated a portion of my life to knowledge and education so yes I would like to retain that knowledge, but what happens when it&amp;rsquo;s too much?&lt;/p>
-&lt;p>I love referring back to John Koenigs&amp;rsquo;s &lt;em>Dictionary of Obscure Sorrows&lt;/em> for possible ways to define the human condition because the English language is too clinical. I come from a culture of metaphors, Urdu the language I speak is filled with it and feels poetic for this reason. While there are too many words in Koenig&amp;rsquo;s work that might fit my human condition in the myriad obscurities that make up who I am, I feel what works best with me in the context of this writing is &lt;em>koinophobia&lt;/em>.&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Koinophobia&lt;/strong>, n. the fear that you&amp;rsquo;ve lived an ordinary life.&lt;/p>
-&lt;p>&lt;cite>— The Dictionary of Obscure Sorrows, John Koenig&lt;/cite>&lt;/p>
-&lt;/blockquote>
-&lt;p>This might be an over-self-analysis but I think the reason why I want to retain information is because I want to not be ordinary, or at the very least give life purpose. My wife often says I have the most strangest of facts in my head and that is quite true, what use is knowing that Australia is wider than the moon?&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;p>This is all of course a meaningless fear I carry, I can&amp;rsquo;t possibly retain all information. I am human and I am supposed to err, but I can still do the best with what I have or try to at least. Here I&amp;rsquo;d like to walk through what my process of retaining information and utilising it effectively has become using &lt;a href="https://obsidian.md/">Obsidian&lt;/a>, an ever evolving &lt;em>second-brain&lt;/em> as many productivity enthusiasts like to refer to as.&lt;/p>
-&lt;h2 id="the-second-brain-i-always-longed-for">
-&lt;a href="#the-second-brain-i-always-longed-for" class="anchor">
-&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-&lt;path fill-rule="evenodd"
-d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
-&lt;/path>
-&lt;/svg>
-&lt;/a>
-The second-brain I always longed for
-&lt;/h2>
-&lt;p>In my last post on knowledge management I went on about how my profession demanded that I write and expand on knowledge. Clearly that isn&amp;rsquo;t the only reason why I&amp;rsquo;ve opted for using something like Obsidian. It is deeply personal as well and rooted in this interest of improving myself. I kept paper notes for a long time and still do, the feel of lead and paper are something no Apple pencil can ever recreate, Obsidian acts in a different way it enters this fold as a means to make sense of the scribbles I&amp;rsquo;ve put down in my notebook.&lt;/p>
-&lt;p>&lt;figure>
-&lt;img loading="lazy"
-src="https://blog.hakmal.com/img/Obsidian.webp"
-alt=""
-title="My research vault in Obsidian open to a random project" />
-&lt;figcaption>My research vault in Obsidian open to a random project&lt;/figcaption>
-&lt;/figure>&lt;/p>
-&lt;p>The second-brain concept is essentially a mindset, &lt;strong>you don&amp;rsquo;t need one if your work and habits don&amp;rsquo;t require this approach&lt;/strong>. But for those who have struggled with retaining information or are sitting on a pile of collected notes in various notebooks, this might just be what you need because it was what I needed. Obsidan is a note taking tool like Notion and others that are in the market. When people swore by these tools I found them ridiculous but having now used Obsidian for a while I fully understand the benefits. I should give a forewarning though, this is a slippery rabbit hole and you can get lost into! I would suggest to take from here what makes sense to you, no two approaches of knowledge management are the same or will work universally and you will need to make them your own.&lt;/p>
-&lt;p>Obsidian uses Markdown (MD) a no frills approach towards writing that lets you focus on content rather than appearance. I&amp;rsquo;m not going to explain how to write in &lt;abbr title="Markdown">MD&lt;/abbr> though &lt;a href="https://www.markdowntutorial.com/">here is a handy interactive tutorial&lt;/a> that should teach you the basics super fast.&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Sidebar:&lt;/strong> I fully support the use of &lt;abbr title="Markdown">MD&lt;/abbr> and think it is the best way for any academic to be writing. While Latex has its pros in creating a final output, it is cumbersome in the process and I think should be left for the very end of the publishing process. On that note if you are someone familiar with Latex then rest assured you can convert from &lt;abbr title="Markdown">MD&lt;/abbr> quite effectively.&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="my-current-workflow">
-&lt;a href="#my-current-workflow" class="anchor">
-&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-&lt;path fill-rule="evenodd"
-d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
-&lt;/path>
-&lt;/svg>
-&lt;/a>
-My current workflow
-&lt;/h2>
-&lt;div class="mermaid">
-flowchart LR
-subgraph Local Static CMS
-A(Obsidian)---->B(Local blog folder)
-C(Hugo)-.->B
-D(Git)-.->B
-end
-subgraph Online Rollout &amp; Callback
-B&lt;==>D1(GitHub)
-D1-->D2(Source Repo)
-D2-. public/ .->D4
-D2-->D3(GitHub Action)
-D3-->D4(Blog Repo)
-end
-&lt;/div>
-&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>The moon of course has more land area but it is a sphere and thus has an equatorial diameter which subsequently is is smaller than the width of Australia.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></description></item><item><title>Why should knowledge management matter?</title><link>https://blog.hakmal.com/post/why-manage-knowledge/</link><pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate><author>Dr Daft</author><guid>https://blog.hakmal.com/post/why-manage-knowledge/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dr Daft</title><link>https://blog.hakmal.com/</link><description>Recent content on Dr Daft</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.hakmal.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Why should knowledge management matter?</title><link>https://blog.hakmal.com/post/why-manage-knowledge/</link><pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate><author>Dr Daft</author><guid>https://blog.hakmal.com/post/why-manage-knowledge/</guid><description>
 &lt;p>I had already planned on making the first few posts of my blog about how I eventually set up the whole thing. This was partly because I would have something to quickly write about while it was still fresh in my mind, but also so I could stick to a habit of writing. I don&amp;rsquo;t really have a schedule in mind for how often I intend to post here (yet), but I&amp;rsquo;m hoping that with these first few technical posts I can get in the swing of it better.&lt;/p>
 &lt;p>While writing this I quickly realised I had a lot more to say! There is a backstory here, a process to the madness that ends in my writing setup so I will have to break this up into pieces now. This is the first post in a multi-part series about my &amp;lsquo;writing environment&amp;rsquo; which itself is rather broad since I jump between multiple programs and also work across different platforms. I own a Windows machine but oddly in the office I&amp;rsquo;ve always been given MacOS. While that doesn&amp;rsquo;t make much difference in terms of this setup, it has meant that I&amp;rsquo;ve had to find systems that were cross platform from the start. A lot of trial and error has gone into what I&amp;rsquo;m still developing here but my current setup is in many ways sustainable (for me at least).&lt;/p>
 &lt;h2 id="the-breakdown">
@@ -142,7 +78,7 @@ The current setup
 &lt;/h3>
 &lt;p>There are multiple cogs to this machine and I will be breaking down each part of the setup in coming posts, but this is where I currently am with my &amp;lsquo;perfect-ish&amp;rsquo; setup. Obsidian works in vaults which is a fancy name for root folders, this blog is part of a separate vault as is my teaching and research work. There is cloud backup as well as Git facilitated repositories for both collaborative work and automation where needed. I have other vaults as well but this series will focus mostly on these three. This diagram shows how it all works as an overview&lt;/p>
 &lt;div class="mermaid">
-flowchart TB
+`flowchart TB
 A(Vault); B(Vault); C(Vault)
 Aa(Student DB); Ab(Pedagogy); Ac(Courses DB)
 Ba(Concepts); Bb(Writing); Bc(Supervision)
@@ -162,7 +98,7 @@ subgraph Teaching
 direction LR
 A-->Aa &amp; Ab &amp; Ac
 end
-Teaching &amp; Research===>id((Cloud))
+Teaching &amp; Research===>id((Cloud))`
 &lt;/div>
 &lt;p>Each vault is self contained and I normally don&amp;rsquo;t need to have them mixing together, though with Obsidian I can cross-access them if I want to. Obsidian&amp;rsquo;s UI is simple and to the point, at the same time there is enough room for making it purposeful. There is an additional layer of automation happening within the vaults themselves to support my workflow, things like maintaining similarly data across for fetching and searching notes. It isn&amp;rsquo;t until each vault is opened and worked in that things start making sense and the connections come together. The need for manual retention is removed through using plugins like &lt;a href="https://github.com/marcusolsson/obsidian-projects">Projects&lt;/a>, &lt;a href="https://github.com/RafaelGB/obsidian-db-folder">DB Folder&lt;/a>, and &lt;a href="https://github.com/blacksmithgu/obsidian-dataview">Dataview&lt;/a> all I&amp;rsquo;ll be exploring in a future Obsidian focused post. There are also some quality of life plugins on top of these to take the vaults from being simple text oriented databases to powerful content creation engines.&lt;/p>
 &lt;p>I was more or less trying to achieve this same thing through Atom before but was unsuccessful. Ulysses did long-form writing quite well though was not very useful for other everyday work. Atom did several things well but nothing well enough. Obsidian on the other hand gives me enough freedom to actually start managing knowledge, an opportunity to learn from what I&amp;rsquo;ve gathered. The difference is night and day at times.&lt;/p>
