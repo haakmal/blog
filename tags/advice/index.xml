@@ -1,2 +1,514 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>advice on Dr Daft</title><link>https://blog.hakmal.com/tags/advice/</link><description>Recent content in advice on Dr Daft</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Fri, 25 Dec 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.hakmal.com/tags/advice/index.xml" rel="self" type="application/rss+xml"/><item><title>How to tell a horse from its 💩</title><link>https://blog.hakmal.com/post/how-to-tell-a-horse/</link><pubDate>Fri, 25 Dec 2015 00:00:00 +0000</pubDate><guid>https://blog.hakmal.com/post/how-to-tell-a-horse/</guid><description>Sidebar: This post was originally on Medium before I brought some needed organisation into my life. It is a rant and from a dark past, I&amp;rsquo;ll leave it at that.
-This is me, with an ominous hand over my head. Back then I didn’t know the many meanings of shit that I do today. I was born in Dubai, though not my homeland it was home for me. I didn’t have any relatives per say there as the bulk of the family lived in Pakistan; the motherland.</description></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advice on Dr Daft</title>
+    <link>https://blog.hakmal.com/tags/advice/</link>
+    <description>Recent content in Advice on Dr Daft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Fri, 25 Dec 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.hakmal.com/tags/advice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+    <title>Making an online playground</title>
+    <link>https://blog.hakmal.com/post/jekyll-playground/</link>
+    <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+    <author>Dr Daft</author>
+    <guid>https://blog.hakmal.com/post/jekyll-playground/</guid>
+    <description>
+        &lt;p&gt;For a while now I&amp;rsquo;ve been collecting snippets of code where I&amp;rsquo;ve explored concepts, played around, or generally just attempted feebly to learn something. Some of this is from before my research days and purely from a place of curiosity. During my research I stumped across Ian Bogost&amp;rsquo;s &lt;em&gt;Play anything&lt;/em&gt; (2016). I was already exploring Bogost&amp;rsquo;s persuasive games and alien phenomenology for my research but this book in many ways changed my perspective towards many things and also structured my outlook towards research and my practice as a designer.&lt;/p&gt;
+&lt;p&gt;The full title explains this well: &lt;em&gt;The pleasure of limits, the uses of boredom, and the secret of games&lt;/em&gt;. That as a whole sounds wonderful and through the many vignettes he paints of his experience with play he talks about how play is everywhere in the shape of playgrounds.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Play isn&amp;rsquo;t doing what we want, but doing what we can with the materials we find along the way. And fun isn&amp;rsquo;t the experience of pleasure, but the outcome of tinkering with a small part of the world in a surprising way.&amp;rdquo; &lt;strong&gt;Bogost, 2016, pg3-4&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;a-github-and-jekyll-playground&#34;&gt;
+    &lt;a href=&#34;#a-github-and-jekyll-playground&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    A GitHub and Jekyll Playground
+&lt;/h2&gt;
+&lt;p&gt;The collection of code snippets and curious explorations were my own little playgrounds where I enacted play as these curious rituals. So I turned to Github to craft a repository for these acts of play. But I soon faced a curious question. I wanted to be able to present my play as part of a larger playground where all could be observed. Why? I&amp;rsquo;m not really sure, but I think this is part of the play anything perspective Bogost was referring to.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t want a complicated setup and liked the simplicity and capabilities of Github Pages. This blog after all is also delivered through Github as are most of my projects and playful activities.&lt;/p&gt;
+&lt;h2 id=&#34;a-clean-and-simple-setup&#34;&gt;
+    &lt;a href=&#34;#a-clean-and-simple-setup&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    A clean and simple setup
+&lt;/h2&gt;
+&lt;p&gt;I won&amp;rsquo;t go into the details of the different iterations I went through before settling with a custom Jekyll setup. There was a lot of testing and exploration with additional learning opportunities. I&amp;rsquo;m not a web developer just a tinkerer so here&amp;rsquo;s my clean and simple setup for making creating a collection of curious coding playgrounds using Github and Jekyll. You can see the &lt;a href=&#34;https://github.com/haakmal/playgrounds&#34;&gt;Github repo&lt;/a&gt; here but let&amp;rsquo;s start with the folder structure.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;_data/                &lt;span class=&#34;c1&#34;&gt;# Metadata folder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── projects/         &lt;span class=&#34;c1&#34;&gt;# Jekyll collection for projects&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── project1.yml  &lt;span class=&#34;c1&#34;&gt;# Metadata file for each project&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;layouts/home.html     &lt;span class=&#34;c1&#34;&gt;# Jekyll layouts go here&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;site/                 &lt;span class=&#34;c1&#34;&gt;# Site generated by Jekyll&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;assets/style.css      &lt;span class=&#34;c1&#34;&gt;# Stylesheet for Jekyll site         &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;projects/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── project1          &lt;span class=&#34;c1&#34;&gt;# Individual project folder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Gemfile               &lt;span class=&#34;c1&#34;&gt;# Jekyll init file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;_config.yml           &lt;span class=&#34;c1&#34;&gt;# Jekyll config file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;index.md              &lt;span class=&#34;c1&#34;&gt;# Site homepage&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It took me a while to understand but this is essentially all there is to it, the structure is simple and easily expandable. With the settings I&amp;rsquo;m about to share the a static website can be formed using markdown files in Github, with additional &amp;lsquo;collections&amp;rsquo; or project folders that are independent of the Jekyll site (or not). That&amp;rsquo;s right, they don&amp;rsquo;t need to be independent and you can easily treat the projects as additional pages though there is an easier setup for that.&lt;/p&gt;
+&lt;h2 id=&#34;jekyll-setup-step-by-step&#34;&gt;
+    &lt;a href=&#34;#jekyll-setup-step-by-step&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    Jekyll setup step-by-step
+&lt;/h2&gt;
+&lt;p&gt;To start we&amp;rsquo;ll prepare the index file. Since Github will use Jekyll to parse any markdown file into a HTML file, it simply needs some information in the YAML section of our markdown file. Adding the following to the &lt;code&gt;index.md&lt;/code&gt; will let Jekyll know it has to parse that file, naming it index is important.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;layout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;home&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The &lt;code&gt;---&lt;/code&gt; at the start and end of a markdown file separate it from the actual content as the YAML portion. There is a list of different keys that can be called here but we can also make our own and that makes YAML very powerful. It&amp;rsquo;s essentially a ways to serialise data to your liking.&lt;/p&gt;
+&lt;p&gt;Configuring the site is done using the &lt;code&gt;_config.yml&lt;/code&gt; which needs to be in our site root. For my purposes I prepared it like so.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;plugins&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;jekyll-feed&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;jekyll-seo-tag&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;collections&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;projects&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;output&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;permalink&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/projects/:name/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;baseurl&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/playgrounds&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;https://haakmal.github.io&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The most important parts are the plugins which are what we need for Jekyll to load. These plugins are enough for static site purposes, there are other plugins that can be added here for further functionality such as help with making posts or a blog.&lt;/p&gt;
+&lt;p&gt;The collections is what allows us to have our projects or playgrounds. Collections are a way to pull in the projects folder as independent pages or sites that can function on their own. Keeping the &lt;code&gt;output: true&lt;/code&gt; is necessary. The &lt;code&gt;permalink&lt;/code&gt; lets Jekyll know how to manage the site links. Finally, the &lt;code&gt;baseurl&lt;/code&gt; is set as the Github repo&amp;rsquo;s name to again to ensure all links start from the correct source.&lt;/p&gt;
+&lt;h2 id=&#34;the-magic-of-metadata&#34;&gt;
+    &lt;a href=&#34;#the-magic-of-metadata&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    The magic of metadata
+&lt;/h2&gt;
+&lt;p&gt;This was a particular learning curve for me to understand how this metadata file could be setup. It&amp;rsquo;s essentially part of the collections feature of Jekyll but it&amp;rsquo;s also a clean way to have Github interact with Jekyll. Here&amp;rsquo;s an example of the metadata file for a project in the repo called &lt;a href=&#34;https://haakmal.github.io/playgrounds/projects/emojidice/&#34;&gt;EmojiDice&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;EmojiDice&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;A storydice variant using emojis, good for brainstorming.&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;credits&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Haider Akmal&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/projects/emojidice/&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The key&amp;rsquo;s like &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;description&lt;/code&gt;, etc can be called anything since they are just data points being referenced in the &lt;code&gt;home.html&lt;/code&gt; layout file. The &lt;code&gt;url&lt;/code&gt; key is what&amp;rsquo;s needed to ensure the correct link is formatted. What is important to do here is to ensure the file name for this YAML metadata file is the same as the project folder. So in this case, the project folder is called &lt;code&gt;emojidice&lt;/code&gt; and the metadata file is called &lt;code&gt;emojidice.yml&lt;/code&gt;, Jekyll handles the rest.&lt;/p&gt;
+&lt;h2 id=&#34;bringing-it-all-together-in-our-layout&#34;&gt;
+    &lt;a href=&#34;#bringing-it-all-together-in-our-layout&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    Bringing it all together in our layout
+&lt;/h2&gt;
+&lt;p&gt;Now that we have a project setup as well as its metadata, we can finally make the layout for our site. In our layout we need to be able to display our projects as that&amp;rsquo;s the whole purpose behind this curious ritual! We are already calling &lt;code&gt;home.html&lt;/code&gt; as the layout for our index file so that&amp;rsquo;s what we have to set up in &lt;code&gt;layouts&lt;/code&gt;. The structure for this template is a basic HTML page with some Jekyll hooks to pull in dynamic data, the full file can be viewed in the repo but this portion is where the magic happens.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{% for project in site.data.projects %}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	{% assign info = project[1] %}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        {% if info.external %}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	        &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{{ info.url }}&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;target&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;{{ info.title }}&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;↗&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        {% else %}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	        &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{{ site.baseurl }}{{ info.url }}&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;{{ info.title }}&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        {% endif %}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	        &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;{{ info.description }}&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	        &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;small&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;👥&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; {{ info.credits }}&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;small&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	      &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{% endfor %}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It&amp;rsquo;s essentially a for loop that iterates inside an unordered list. Each new list item being made has hooks in the middle such as &lt;code&gt;{{ info.title }}&lt;/code&gt;that are fetching the unique keys we setup in our metadata file for that project. The loop knows to look at &lt;code&gt;site.data.projects&lt;/code&gt; as in the &lt;code&gt;data/projects/&lt;/code&gt; folder for any projects then compare them against the &lt;code&gt;projects/&lt;/code&gt; folder in out site root.&lt;/p&gt;
+&lt;p&gt;With that setup, all that&amp;rsquo;s left is to make it look pretty. For the design of the site I kept it all simple focusing on being just a way to represent each playground. You can find the full layout and stylsheet in&lt;code&gt;layouts/home.html&lt;/code&gt; and &lt;code&gt;assets/style.css&lt;/code&gt; respectively in my &lt;a href=&#34;https://github.com/haakmal/playgrounds&#34;&gt;playgrounds repo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;setting-up-github-pages&#34;&gt;
+    &lt;a href=&#34;#setting-up-github-pages&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    Setting up Github Pages
+&lt;/h2&gt;
+&lt;p&gt;At this point we have the building blocks for our static custom Jekyll site but we still have to setup Github to use its Pages feature. Github Pages does all the heavy lifting for us but in order for us to use our own custom Jekyll layouts and configurations we have to tell Github not to use it&amp;rsquo;s own Jekyll configuration. The Github Pages feature defaults to using it&amp;rsquo;s own Jekyll theme and configurations, this is where we need to ensure we initiate our own Jekyll configuration. You may have noticed the &lt;code&gt;Gemfile&lt;/code&gt; in the repository, this is where that comes in.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://rubygems.org&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;gem&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;jekyll&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;~&amp;gt; 4.3&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;gem&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;jekyll-feed&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;gem&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;jekyll-seo-tag&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Jekyll is Ruby based, unlike Hugo which this blog is being powered by which is Go based. It took me a while to figure out Hugo and now looking at Ruby I&amp;rsquo;ve realised I can&amp;rsquo;t be proficient in either! That said, there are ample resources around the internet and now with ChatGPT picking up basic skills for programming languages are quite easy. I know this much that the Gemfile is necessary to initiate our Jekyll configuration. All this file is telling Github is to pull in Jekyll without any configurations such as themes etc and instead ensure the plugins we require are pulled in.&lt;/p&gt;
+&lt;p&gt;Finally, all we need to do is now upload all of this to Github and initiate Github Pages. For that we can go to the repo &lt;em&gt;Settings -&amp;gt; Pages (left menu)&lt;/em&gt; and selecting the branch we would like to deploy our repository from which in this case will be the main branch. And that&amp;rsquo;s it! We have a static site powered by Github Pages with a custom Jekyll static site generator. The project folders can be independent HTML files with their own scripts, styles, and more as well as markdown files that will get parsed by Jekyll into HTML with whatever layout we would like them to follow.&lt;/p&gt;
+&lt;p&gt;Play is truly everywhere, even in the making of this collection of playgrounds through Github. I&amp;rsquo;ve learned a lot in the process of making this and hopefully more curious playgrounds full of design and code will be emerging in the days to come.&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>Why should knowledge management matter?</title>
+    <link>https://blog.hakmal.com/post/why-manage-knowledge/</link>
+    <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
+    <author>Dr Daft</author>
+    <guid>https://blog.hakmal.com/post/why-manage-knowledge/</guid>
+    <description>
+        &lt;p&gt;I had already planned on making the first few posts of my blog about how I eventually set up the whole thing. This was partly because I would have something to quickly write about while it was still fresh in my mind, but also so I could stick to a habit of writing. I don&amp;rsquo;t really have a schedule in mind for how often I intend to post here (yet), but I&amp;rsquo;m hoping that with these first few technical posts I can get in the swing of it better.&lt;/p&gt;
+&lt;p&gt;While writing this I quickly realised I had a lot more to say! There is a backstory here, a process to the madness that ends in my writing setup so I will have to break this up into pieces now. This is the first post in a multi-part series about my &amp;lsquo;writing environment&amp;rsquo; which itself is rather broad since I jump between multiple programs and also work across different platforms. I own a Windows machine but oddly in the office I&amp;rsquo;ve always been given MacOS. While that doesn&amp;rsquo;t make much difference in terms of this setup, it has meant that I&amp;rsquo;ve had to find systems that were cross platform from the start. A lot of trial and error has gone into what I&amp;rsquo;m still developing here but my current setup is in many ways sustainable (for me at least).&lt;/p&gt;
+&lt;h2 id=&#34;the-breakdown&#34;&gt;
+    &lt;a href=&#34;#the-breakdown&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    The breakdown
+&lt;/h2&gt;
+&lt;p&gt;Everything that I mention in this series can be repurposed as you like, these platforms are all &lt;abbr title=&#34;Free Open Source Software&#34;&gt;FOSS&lt;/abbr&gt; after all. I plan on covering a number of topics ahead with some posts being about the build up and background, while others more technical. Since my approach towards writing and ultimately knowledge management are tied into developing your own ethos I see this series as jumping between research and life skills. Hopefully whoever reads it may find some benefit. Here&amp;rsquo;s a breakdown of how I see this unfolding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.hakmal.com/post/why-manage-knowledge/&#34;&gt;Why should knowledge management matter?&lt;/a&gt; &lt;em&gt;(this post)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Creating a knowledge management hub with Obsidian &lt;em&gt;(soon)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Setting up a blog using Hugo and Git &lt;em&gt;(soon)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some additional content I plan to work on ahead around Obsidian and workflows include using Obsidian for pedagogy, as a student, and also as a cross collaborative research hub with Git.&lt;/p&gt;
+&lt;h2 id=&#34;the-woes-and-wants-of-knowledge-management&#34;&gt;
+    &lt;a href=&#34;#the-woes-and-wants-of-knowledge-management&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    The woes and wants of knowledge management
+&lt;/h2&gt;
+&lt;p&gt;In my &lt;a href=&#34;https://blog.hakmal.com/post/hello-world/&#34;&gt;last post&lt;/a&gt; I went on about how there is this pressure on academics to write and continue to write in their fields all moving towards that one point of unique knowledge contribution. Having a good clean writing setup that works for you accentuates that experience making it &lt;em&gt;(a)&lt;/em&gt; worth while, and &lt;em&gt;(b)&lt;/em&gt; dare I say enjoyable. Not that writing isn&amp;rsquo;t fun for some people, but when it comes to academic writing it can get dry. It all starts by being able to gather information that you&amp;rsquo;ve collected through research.&lt;/p&gt;
+&lt;p&gt;A trusty notebook and pencil served me well for years and still do. I did always find myself hesitant when taking notes because I would know that down the line I would forget about this note. To me the act of writing something down is in effect adding it to a short-term memory, not necessarily something that I will return or be reminded of. Like many others I too had notebooks full of content that was never realised. Knowledge management starts from there and in most cases often ends there as well which where systems like the one I&amp;rsquo;m describing today may come into play.&lt;/p&gt;
+&lt;p&gt;There are several such systems with the more popular one being the &lt;a href=&#34;https://zettelkasten.de/introduction&#34;&gt;Zettelkasten&lt;/a&gt; approach. I just can&amp;rsquo;t manage that, I find it it taxing and complex for my brain to keep track of! To those who have, I see that as impressive and I&amp;rsquo;m very certain you&amp;rsquo;ve reached a point of efficiency that is almost machine like. Those who are not aware of the zettelkasten approach, it was developed by a social scientist Niklas Luhmann in an attempt to over power his productivity.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; I&amp;rsquo;m a very patient person in most cases, but this approach was beyond me.&lt;/p&gt;
+&lt;p&gt;Having a penchant to tinker and get slightly obsessed with the process (as I often do), will certainly help when setting up a writing space that is for all purposes designed to be efficient. That level of tinkering was needed for zettelkasten though the redundancy of tasks made me feel less productive personally. Perhaps I approached it incorrectly and maybe down the line I might try again but in the way I practiced it a zettelkasten approach did not feel necessary; in that regard I&amp;rsquo;d like to think I&amp;rsquo;m somewhere on the edge of this knowledge management spectrum. What I needed was a system that was efficient and worked for my needs without the complexity of having to manage it as well. For some that might be as simple as setting up a Medium account or maybe Blogspot (that is a still a thing right?) with a content management system, for others it may very well be something as focused as Luhmann&amp;rsquo;s approach. For me it needed to be more bespoke and almost automated.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; 
+      src=&#34;https://images.unsplash.com/photo-1524668951403-d44b28200ce0?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1074&amp;amp;q=80&#34; 
+      alt=&#34;&#34; 
+       title=&#34;Does anything beat a good typewriter? ([Source](https://unsplash.com/photos/qFH7-yKoxik))&#34; /&gt;
+    &lt;figcaption&gt;Does anything beat a good typewriter? (&lt;a href=&#34;https://unsplash.com/photos/qFH7-yKoxik&#34;&gt;Source&lt;/a&gt;)&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;the-perfect-setup-does-not-exist&#34;&gt;
+    &lt;a href=&#34;#the-perfect-setup-does-not-exist&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    The perfect setup does not exist
+&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve gone back and forth multiple times with what the perfect setup is and I even wrote about it before in my &lt;a href=&#34;https://haiderakmal.medium.com/thoughts-on-doing-a-phd-in-design-and-during-a-pandemic-141f76605c04&#34;&gt;post-PhD post&lt;/a&gt;, a rather emotional read if I&amp;rsquo;m being honest with not enough information on my actual setup! I do now realise after testing so many different approaches that the perfect setup for anything at all simply does not exist. It&amp;rsquo;s important to accept that. You will be constantly tinkering, forever changing, forever dissatisfied with what you have. But for the moment it will work. There will always be a better version of that software or alternative out there and being ready and accepting of that is key.&lt;/p&gt;
+&lt;p&gt;My interest in setting up the best writing environment started in my Master&amp;rsquo;s, I had a lot of writing to do and Word was nasty (still is). I found the wonders of Markdown around then having only ever used it in forums made in phpBB (does anyone remember that?), now its usage was popping up in lots of applications. GitHub of course had always used &lt;abbr title=&#34;Markdown&#34;&gt;MD&lt;/abbr&gt; but I wasn&amp;rsquo;t a programmer until much later so I wouldn&amp;rsquo;t have known. I used &lt;a href=&#34;https://ulysses.app&#34;&gt;Ulysses&lt;/a&gt; throughout my MA and loved every bit of it, right up to the point when they decided to adopt a subscription-based model for what is a simplified writing app. The business opportunity aside this was around the time when &lt;em&gt;subscription-based-everything&lt;/em&gt; was popping up and if the comments section of &lt;a href=&#34;https://medium.com/building-ulysses/why-were-switching-ulysses-to-subscription-47f80b07a9cd&#34;&gt;this post&lt;/a&gt; by the app developers is something to go by it clearly did not sit well with more than just me. I couldn&amp;rsquo;t get on board with that no matter how much I loved the software, it was at the end of the day a writing application and without the bells and whistles did what Notepad could do. This &lt;strong&gt;company-centric over consumer-centric&lt;/strong&gt; approach is probably an article on its own, but is the reason why we have a &lt;a href=&#34;https://cointelegraph.com/blockchain-for-beginners/what-is-web-3-0-a-beginners-guide-to-the-decentralized-internet-of-the-future&#34;&gt;Web 3.0&lt;/a&gt; push towards transparency and decentralisation.&lt;/p&gt;
+&lt;p&gt;I had some rebound after Ulysses jumping to &lt;a href=&#34;https://github.com/atom&#34;&gt;Atom&lt;/a&gt; for a while then other similar software.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; I even tried Notion for a bit and soon realised that it didn&amp;rsquo;t click. My PhD was entirely done in Atom, every paper, review, poster, and more that I wrote at the time used a custom setup with &lt;a href=&#34;https://pandoc.org/MANUAL.html&#34;&gt;Pandoc&lt;/a&gt; and &lt;abbr title=&#34;Markdown&#34;&gt;MD&lt;/abbr&gt; in Atom. This was until I found &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; towards the end of my PhD. I really wish I had found this earlier on as I believe it would have changed my approach towards note taking and knowledge management significantly. I also wouldn&amp;rsquo;t have had to deal with Atom crashing so much on. I even went rouge in the middle of my journey to find the perfect writing setup and going full text-only in Vim and Emacs and the learning curve hit me hard, I can assure you I&amp;rsquo;m never strolling down that road again.&lt;/p&gt;
+&lt;p&gt;Now I use Obsidian every day, for teaching purposes, research, this blog, other writings, musings, and more. I&amp;rsquo;m constantly learning about automating steps as well at a comfortable pace, which is partly why I think this constitutes as close to a perfect setup as I can get right now. The other methods I used were either too restrictive, heavy learning curves, required too much tinkering, or just didn&amp;rsquo;t appeal to me.&lt;/p&gt;
+&lt;h2 id=&#34;the-purpose-of-knowledge-management&#34;&gt;
+    &lt;a href=&#34;#the-purpose-of-knowledge-management&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    The purpose of knowledge management
+&lt;/h2&gt;
+&lt;p&gt;This first post in the series is definitely more rant than guide, but is also necessary because as academics we have an obligation to retain information as much as disseminate. Back in my Master&amp;rsquo;s I had not thought I would have gone down the road of academia, I was even offered to continue but I couldn&amp;rsquo;t foresee a path. I wanted to return to industry in my homeland, but Pakistan has always been a difficult market to get into and the doors that opened were different to what I had anticipated. Managing your knowledge is akin to managing your own life in that way. Some things you collect might move into rabbit holes or end up in dead ends while others might birth connections. It is an ethos you develop over time that fits to your rhetoric of what is knowledge and how it should be managed. After all, how do &lt;strong&gt;you&lt;/strong&gt; retain information? Is it a diary you keep? A notepad or some scraps of paper you&amp;rsquo;ve collected over time? We retain information in many ways though very little sticks.&lt;/p&gt;
+&lt;p&gt;People who follow the zettelkasten approach follow that mantra that retention of information is key to productivity. I don&amp;rsquo;t see it like that, to me thats like the Chinese Room Argument. You can have a dictionary of content but it would be meaningless unless context is applied and maintained. That is where I believe an effective knowledge management system comes into play, and is the kind of system I&amp;rsquo;ve attempted to develop. One with specific purpose beyond retention and towards meaning making.&lt;/p&gt;
+&lt;p&gt;That has been a central premise of much of my own work around design and more-than humanness, the purpose of good design and approaching meaningful futures. Across the many years that I&amp;rsquo;ve been experimenting with different approaches towards knowledge management, I think meaning has always been missing. The purpose has always been retention and it never worked for me. Why is it now that my Obsidian vaults are making sense to me? It certainly has something to do with how the software is elegantly positioned towards tinkering but not in an aggressively programmer focused way. That&amp;rsquo;s what I like about Obsidian, you don&amp;rsquo;t need to be a programmer to be able to create automated processes in your workflow for instance, because someone in the community has prepared a plugin to help with that!&lt;/p&gt;
+&lt;h3 id=&#34;the-current-setup&#34;&gt;
+    &lt;a href=&#34;#the-current-setup&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    The current setup
+&lt;/h3&gt;
+&lt;p&gt;There are multiple cogs to this machine and I will be breaking down each part of the setup in coming posts, but this is where I currently am with my &amp;lsquo;perfect-ish&amp;rsquo; setup. Obsidian works in vaults which is a fancy name for root folders, this blog is part of a separate vault as is my teaching and research work. There is cloud backup as well as Git facilitated repositories for both collaborative work and automation where needed. I have other vaults as well but this series will focus mostly on these three. This diagram shows how it all works as an overview&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;
+flowchart TB
+	A(Vault); B(Vault); C(Vault)
+	Aa(Student DB); Ab(Pedagogy); Ac(Courses DB)
+	Ba(Concepts); Bb(Writing); Bc(Supervision)
+	Ca(Content); Cb(Structure)
+	
+	Cb-.-&gt;id1([Source Git Repo])
+	Ca-.-&gt;id2([Public Git Repo])
+	Bb-.-&gt;id3([Collaborative Git Repo])
+	subgraph Blog
+		direction LR
+		C--&gt;Ca &amp; Cb
+	end
+	subgraph Research
+		direction LR
+		B--&gt;Ba &amp; Bb &amp; Bc
+	end
+	subgraph Teaching
+		direction LR
+		A--&gt;Aa &amp; Ab &amp; Ac
+	end
+	Teaching &amp; Research===&gt;id((Cloud))
+&lt;/div&gt;
+
+&lt;p&gt;Each vault is self contained and I normally don&amp;rsquo;t need to have them mixing together, though with Obsidian I can cross-access them if I want to. Obsidian&amp;rsquo;s UI is simple and to the point, at the same time there is enough room for making it purposeful. There is an additional layer of automation happening within the vaults themselves to support my workflow, things like maintaining similarly data across for fetching and searching notes. It isn&amp;rsquo;t until each vault is opened and worked in that things start making sense and the connections come together. The need for manual retention is removed through using plugins like &lt;a href=&#34;https://github.com/marcusolsson/obsidian-projects&#34;&gt;Projects&lt;/a&gt;, &lt;a href=&#34;https://github.com/RafaelGB/obsidian-db-folder&#34;&gt;DB Folder&lt;/a&gt;, and &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;Dataview&lt;/a&gt; all I&amp;rsquo;ll be exploring in a future Obsidian focused post. There are also some quality of life plugins on top of these to take the vaults from being simple text oriented databases to powerful content creation engines.&lt;/p&gt;
+&lt;p&gt;I was more or less trying to achieve this same thing through Atom before but was unsuccessful. Ulysses did long-form writing quite well though was not very useful for other everyday work. Atom did several things well but nothing well enough. Obsidian on the other hand gives me enough freedom to actually start managing knowledge, an opportunity to learn from what I&amp;rsquo;ve gathered. The difference is night and day at times.&lt;/p&gt;
+&lt;h3 id=&#34;is-knowledge-management-needed&#34;&gt;
+    &lt;a href=&#34;#is-knowledge-management-needed&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    Is knowledge management needed?
+&lt;/h3&gt;
+&lt;p&gt;A difficult question in the end. Everyone has a particular workflow that fits them well. I&amp;rsquo;ve gone through several and I&amp;rsquo;m still evolving this one. What I have understood in this time is that retention is not the key but management is, being able to make the connections between gathered knowledge is what matters. A tool like Obsidian might not be for everyone, and it shouldn&amp;rsquo;t either. For many a notebook, some post-its, a pencil all works well enough. Once I had started teaching the need to maintain a record of my work became more evident. Keeping track of students for efficient feedback as much as understanding what a decentralised perspective towards pedagogy could be. As an academic I need to write about my pedagogy, I need to write about other things beyond as well. Seeing connections is difficult at times and I hope the current workflow I have is sustainable enough to ease that difficulty. The need for knowledge management should emerge from the intent you have, for me it&amp;rsquo;s teaching, research, and learning. For others it could be anything from keeping track of your life to finally writing that novel you haven&amp;rsquo;t touched for so long.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;More on Niklas Luhmann &lt;a href=&#34;https://zettelkasten.de/introduction/#luhmann-s-zettelkasten&#34;&gt;here&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Sadly the hackable development environment has been &lt;a href=&#34;https://github.blog/2022-06-08-sunsetting-atom/&#34;&gt;archived&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>Obligatory &#39;hello world&#39; post</title>
+    <link>https://blog.hakmal.com/post/hello-world/</link>
+    <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
+    <author>Dr Daft</author>
+    <guid>https://blog.hakmal.com/post/hello-world/</guid>
+    <description>
+        &lt;h2 id=&#34;what-is-this-place&#34;&gt;
+    &lt;a href=&#34;#what-is-this-place&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    What is this place?
+&lt;/h2&gt;
+&lt;p&gt;Why hello there! &lt;code&gt;(He says in his best Obi Wan voice)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Welcome to this blog. As is my cultural tradition I should have something spread out for guests like sweets or a beverage. Bare with me while I gather things here, this is my first post after all and there is still some scaffolding around the place. I don&amp;rsquo;t think this is a right of passage in any way, I&amp;rsquo;ve made and forgotten many blogs in the past. I&amp;rsquo;m sincerely hoping this one sticks partly because my career now requires this (or at least that is how I&amp;rsquo;ve come to understand things), but also because I really need to get back into the habit of writing (again for the sake of my career, and some sanity).&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; 
+      src=&#34;https://images.unsplash.com/photo-1609540969455-ad5ea19be121?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1170&amp;amp;q=80&#34; 
+      alt=&#34;&#34; 
+       title=&#34;Have some ladoo, apologies if you&amp;#39;re diabetic ([Source](https://unsplash.com/photos/uWI48cpw7Vo))&#34; /&gt;
+    &lt;figcaption&gt;Have some ladoo, apologies if you&amp;rsquo;re diabetic (&lt;a href=&#34;https://unsplash.com/photos/uWI48cpw7Vo&#34;&gt;Source&lt;/a&gt;)&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure who might end up reading any of this content, but perhaps these collections of words will make sense to others. They may even help me in my research. Maybe you&amp;rsquo;re one of my students who has curiously found your way onto this semi-personal space of mine, or an avid researcher by chance whose stumbled here because of my work? Perhaps your just passing by and happened to be curious.&lt;/p&gt;
+&lt;p&gt;I like that in all these instances curiosity is the common thread linking everything. My entire life has pretty much been about curiosity and as is the way of time I&amp;rsquo;ve aged, and over this course have realised that the decisions I&amp;rsquo;ve made were always because of curiosity. Why else would anyone enter academia? It&amp;rsquo;s certainly not because of the lavish high-flying celebrity lifestyle I can assure you that! We become teachers, academics, and researchers because we are curious kittens. I&amp;rsquo;d would much like to retain that thread as I continue with my work and hopefully this blog can be a part of that story.&lt;/p&gt;
+&lt;h2 id=&#34;what-would-i-like-from-this-blog&#34;&gt;
+    &lt;a href=&#34;#what-would-i-like-from-this-blog&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    What would I like from this blog?
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;d like this &amp;lsquo;blog&amp;rsquo; to become something of a repository for my thoughts and practice as an academic.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;d like it to also be a repository of possible research explorations that are for a lack of a better word &lt;em&gt;undercooked&lt;/em&gt;, perhaps as thought experiments or loose accounts of future possibilities.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;d like to use this as a platform for making more sense out of my work and benefit my career.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;d like this to be a place for me to let out some steam once in a while and ponder existence, we all need to occasionally after all.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;d like to separate my more personal opinions, musings, and rants from the serious work I&amp;rsquo;ve done in the past and plan to do ahead. For those interested I&amp;rsquo;m referring to my &lt;a href=&#34;https://haiderakmal.medium.com&#34;&gt;Medium blog&lt;/a&gt;, one of my previous lacklustre attempts in retaining this written lifestyle.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;d like to be able to make writing a bigger part of my life through this blog. I used to write profusely before and for those who don&amp;rsquo;t know I&amp;rsquo;ve written multiple short stories, half of a novel, and the beginnings of another one all of course unpublished! This is perhaps one of the bigger reasons why I&amp;rsquo;d like this blog to exist as well, so I can get back into those fictional worlds through this practice.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;why-does-this-matter&#34;&gt;
+    &lt;a href=&#34;#why-does-this-matter&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    Why does this matter?
+&lt;/h2&gt;
+&lt;p&gt;Should it matter? There is a lot of pressure on academics to write or at least have their opinions out in the world in some form. &lt;em&gt;&amp;ldquo;What is your contribution to the generation of new knowledge?&amp;rdquo;&lt;/em&gt;, to paraphrase a question my supervisor asked me in my PhD and one I ask all my research students as well because it matters. This need from the academic life pushes us towards things like keeping blogs, written accounts, recordings or daily thoughts, and more how ever possible.&lt;/p&gt;
+&lt;p&gt;Should it matter I ask again? Maybe not, after all when we are doing research is it for the good of knowledge or for that curious itch we have as individuals who foster interest in things? A question I&amp;rsquo;d love to leave hanging in the air for a bit.&lt;/p&gt;
+&lt;h2 id=&#34;what-to-expect-ahead&#34;&gt;
+    &lt;a href=&#34;#what-to-expect-ahead&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    What to expect ahead
+&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m planning on writing more often in this space and as mentioned separating content and thoughts. I&amp;rsquo;ve always been interested in organising myself towards efficiency and I&amp;rsquo;ve recently been enamoured by &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; a knowledge management app (basically over powered note taking). I highly recommend it, I use it for managing my student information, classwork, research work, and also personal life. In fact, this post I wrote in Obsidian as well. I&amp;rsquo;ll definitely be dropping some of my experiences with knowledge management in here in the coming days.&lt;/p&gt;
+&lt;p&gt;The making of this blog has been a learning activity in itself and I&amp;rsquo;ll certainly share what I&amp;rsquo;ve learned in my next post. As a researcher I&amp;rsquo;ve learned and explored many ways to support my academic journey which will also find a home here. I suppose that&amp;rsquo;s the thing in the end, what to to expect is a very board and vague thing to say or even suggest. Though I also don&amp;rsquo;t like the term &lt;em&gt;&amp;rsquo;expect&amp;rsquo;&lt;/em&gt;, it has an air of anticipation, anxiety, even urgency which always makes me uncomfortable. What if whatever comes ahead isn&amp;rsquo;t to your &amp;rsquo;expectations&amp;rsquo; (no pun)?&lt;/p&gt;
+&lt;p&gt;I think I&amp;rsquo;ll be playing it by ear. I&amp;rsquo;ve often found that no matter how much you can plan and manage things, &lt;em&gt;things&lt;/em&gt; have a tendency of getting away as well.&lt;/p&gt;
+
+    </description>
+    </item>
+    
+    <item>
+    <title>How to tell a horse from its 💩</title>
+    <link>https://blog.hakmal.com/post/how-to-tell-a-horse/</link>
+    <pubDate>Fri, 25 Dec 2015 00:00:00 +0000</pubDate>
+    <author>Dr Daft</author>
+    <guid>https://blog.hakmal.com/post/how-to-tell-a-horse/</guid>
+    <description>
+        &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Sidebar:&lt;/strong&gt; This post was originally on Medium before I brought some needed organisation into my life. It is a rant and from a dark past, I&amp;rsquo;ll leave it at that.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; 
+      src=&#34;https://blog.hakmal.com/img/me4211.webp&#34; 
+      alt=&#34;&#34; 
+       title=&#34;This is me, with an ominous hand over my head. Back then I didn’t know the many meanings of shit that I do today.&#34; /&gt;
+    &lt;figcaption&gt;This is me, with an ominous hand over my head. Back then I didn’t know the many meanings of shit that I do today.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;I was born in Dubai, though not my homeland it was home for me. I didn’t have any &lt;em&gt;relatives&lt;/em&gt; per say there as the bulk of the family lived in Pakistan; the motherland. Though I suppose your motherland should be where you are most at home, at the time it was Dubai, over the years it became Pakistan to some extent. Obviously it’s a different dynamic having spent half your life in one environment and then the other in a totally opposite world, but you get used to it mainly because you have people around you who try to make you feel &lt;em&gt;‘welcomed’&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;But do they really mean it? I remember growing up in a home foreign from home, whispers of memories with my parents always pressing the notion of &lt;em&gt;family&lt;/em&gt;. I remember growing up with this image of these concentric circles in my head on how family functioned, the centre of the circle being you and the closer shapes being your immediate loved ones dispersing out slowly into distant cousins and relatives to that quarter-and-a-half aunt from God knows where trying desperately to wed you off somewhere.&lt;/p&gt;
+&lt;p&gt;As I grew older I realised I could not have been more wrong with this arrangement in my head. Being so far away from the motherland you tend to create wistful imaginings of it, you build upon these dreams from past memories or stories related to you by your loved ones. Images of a world that exists sadly only in your head and the heads of like minded cattle that are closest to you.&lt;/p&gt;
+&lt;p&gt;The ‘you are one of us and therefore welcome among us’, dialog that ensues between parties that have met after many a sunrise, I understood over time to be a farce. One that pushed you off to the side.&lt;/p&gt;
+&lt;h2 id=&#34;humans-tend-to-enjoy-the-subtle-art-of-nitpicking&#34;&gt;
+    &lt;a href=&#34;#humans-tend-to-enjoy-the-subtle-art-of-nitpicking&#34; class=&#34;anchor&#34;&gt;
+        &lt;svg class=&#34;icon&#34; aria-hidden=&#34;true&#34; focusable=&#34;false&#34; height=&#34;16&#34; version=&#34;1.1&#34; viewBox=&#34;0 0 16 16&#34; width=&#34;16&#34;&gt;
+            &lt;path fill-rule=&#34;evenodd&#34;
+                d=&#34;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&#34;&gt;
+            &lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/a&gt;
+    Humans tend to enjoy the subtle art of nitpicking.
+&lt;/h2&gt;
+&lt;p&gt;When you fall off a horse there are two things that run through your mind:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The ground is coming at me at an alarming rate therefore I should probably brace myself for impact, and&lt;/li&gt;
+&lt;li&gt;I hope I don’t get trampled over.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What you don’t think about is that when you fall off a horse—in this case one you’ve groomed so well for so long—you raise your chances of falling not only on the ground but also on to a world underneath the horse full of horse manure. You see the world for what it truly is, and as you sit there on your newly acquired mushy throne of flies picking out bits from your hair you lift your hand in hopes to find something reaching out to you and see your majestic stead galloping off into the distance.&lt;/p&gt;
+&lt;p&gt;I refuse to believe the horse is unaware of its lost passenger, I wouldn’t be surprised to know that they secretly smirk at our unfortunate demise. Perhaps they do it on purpose, but horses aren’t people. I know that from observation, and also I understand if you give a horse an apple he’ll love you for it whereas humans tend to enjoy the subtle art of nitpicking.&lt;/p&gt;
+&lt;p&gt;No, this metaphorical stead in the shape of all your worthless imaginings of relations that you think you can count on when the time is rough not only throws you down when you least expect it, but it also makes sure it leaves a long and wide trail of feaces for you to land on; and being a very tricky beast it also manages to trample over you at the same time.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; 
+      src=&#34;https://blog.hakmal.com/img/me342.webp&#34; 
+      alt=&#34;&#34; 
+       title=&#34;This is me later, when I used to give a shit. See how it’s written on my face?&#34; /&gt;
+    &lt;figcaption&gt;This is me later, when I used to give a shit. See how it’s written on my face?&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;It was around the time I was in mid gallop upon my stead that the ground suddenly looked up at me and said, &lt;em&gt;“Hello! We need to have a chat”.&lt;/em&gt; The air rushed by me as I saw the horizon tilt to an angle I was certain it shouldn’t, my crash was of course cushioned by the bed of leftover memories and yesterdays. I realised then these elusive creatures I had grown to accept as &lt;em&gt;relatives&lt;/em&gt; and otherwise &lt;em&gt;family members&lt;/em&gt; were not concentric circles that supported each others&amp;rsquo; shape or were fashioned out of one another. No, these were like bubbles that popped up around you at random mostly when you needed them least and then burst into a kaleidoscope of colours that skittered away instantaneously leaving the world empty, barren, and monotone.&lt;/p&gt;
+&lt;p&gt;The world always was that way, it’s just the fake lens they placed before you that tricked you into imagining it different.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When family deserts, you’re left with an odd expression on your face. It’s half between a look of abject confusion and what I understand to be best described as &lt;em&gt;‘oh no you did not’&lt;/em&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;There is a looming threat of anger with the occasional vein popping somewhere on your body. Once you’ve gathered the courage to stand up from the now evident forever on-going road of shit that they’ve left behind you force yourself to come to terms with this revelation.&lt;/p&gt;
+&lt;p&gt;It might seem like the end and there’s always the whole, &lt;em&gt;“I’m ending this chapter once and for all!”&lt;/em&gt; moment you go through, but sadly from then on it’s not necessarily smooth sailing.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; 
+      src=&#34;https://blog.hakmal.com/img/me0232.webp&#34; 
+      alt=&#34;&#34; 
+       title=&#34;This is me laterer than later, as you can see it’s both fifteen past six and a quarter to eight. I clearly do not give a shit here. It’s the subtle things that make the difference you see.&#34; /&gt;
+    &lt;figcaption&gt;This is me laterer than later, as you can see it’s both fifteen past six and a quarter to eight. I clearly do not give a shit here. It’s the subtle things that make the difference you see.&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Through my years of observation I’ve also come to conclude that relatives have an inherent ability to poke and pry in your business. I’d love to write on the art of being a twat someday, but I’m afraid in order to go into the details of how one comes around to becoming said abomination, I’d have to spend a whole lot more time around said people in order to study them some more! Luckily I’ve grown weary of all forms of &lt;em&gt;twatery&lt;/em&gt; that humans have proved themselves capable of.&lt;/p&gt;
+&lt;p&gt;They poke, they pry, they stick their nose in and rub it around sniffing out what they can. They throw words at you which form mystical sentences a kin to &lt;em&gt;advice&lt;/em&gt;, yet you never asked for any. They paint magical worlds in your head where actions no longer take shape the way they did in your memories but instead act out a new script, to you the audience in this theatre of the absurd.&lt;/p&gt;
+&lt;p&gt;In short, they decieve.&lt;/p&gt;
+&lt;p&gt;Perhaps they think over the years your distance from the motherland makes you easy to manipulate, that you can’t counter their sorcery. Little do they know that as you grow up and see them leech your parents and other less fortunate loved ones, they’ve taught you valuable lessons. Coupled with the drama of dismounting the stead, you can see the wisps of their sorcery a mile away.&lt;/p&gt;
+&lt;p&gt;You’ve now strategically placed spikes around you. You’ve come to enjoy the world in monochrome, maybe even started adding your own colour in places. You’ve made your own throne now of gilded moments forged in the fires of tomorrow to become shimmering memories one day. All the while you sit there and admire the dance of your spikes poking out the many translucent cages that your would-be loved ones have around them.&lt;/p&gt;
+&lt;p&gt;They plummet into the abyss as you sit and smile for a change.&lt;/p&gt;
+&lt;p&gt;My advice to whoever is reading this is, when you get the chance to have that smile make sure you savour it for you’ve earned it. Be weary of that sudden shift in the air when the horizon starts to tilt, it comes when you least expect it. We’ve built magnanimous realms in our heads with thrones and plinths for all of those who we &lt;em&gt;assume&lt;/em&gt; love us, those who we &lt;em&gt;assume&lt;/em&gt; are our well wishers, who we &lt;em&gt;assume&lt;/em&gt; wouldn’t harm us. But this throne room of ours is mostly full of empty vessels that shatter to the tiniest prick.&lt;/p&gt;
+&lt;p&gt;Fill your thrones with those who truly love you, who would leave you with fond memories, and hopefully have a seatbelt on the saddle. Don’t fill it with relatives who can never relate.&lt;/p&gt;
+
+    </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-au">
+    
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="dark">
+    <title>Making an online playground | Dr Daft</title>
+
+    
+    
+    <meta property="og:site_name" content="Dr Daft&#39;s Blog" />
+    <meta property="og:title" content="Making an online playground | Dr Daft"/>
+    <meta itemprop="name" content="Making an online playground | Dr Daft" />
+    <meta name="twitter:title" content="Making an online playground | Dr Daft" />
+    <meta name="application-name" content="Making an online playground | Dr Daft" /><meta name="twitter:card" content="summary"/>
+
+    <meta name="description" content="Using Github and Jekyll to make a space for playful design and code" />
+    <meta name="twitter:description" content="Using Github and Jekyll to make a space for playful design and code "/>
+    <meta itemprop="description" content=" Using Github and Jekyll to make a space for playful design and code "/>
+    <meta property="og:description" content=" Using Github and Jekyll to make a space for playful design and code " />
+
+    
+
+<meta property="og:type" content="article" />
+<meta property="article:publisher" content="Haider Ali Akmal" />
+<meta property="og:article:published_time" content=2025-07-09T00:00:00Z />
+<meta property="article:published_time" content=2025-07-09T00:00:00Z />
+
+
+  <meta property="og:article:author" content="Dr daft" />
+  <meta property="article:author" content="Dr daft" />
+  <meta name="author" content="Dr daft" />
+
+
+
+
+<script defer type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Making an online playground",
+    "author": {
+      "@type": "Person",
+      "name": "Haider Ali Akmal"
+    },
+    "datePublished": "2025-07-09",
+    "description": "Using Github and Jekyll to make a space for playful design and code",
+    "wordCount":  1641 ,
+    "mainEntityOfPage": "True",
+    "dateModified": "2025-07-09",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Haider Ali Akmal",
+      "logo": {
+        "@type": "imageObject",
+        "url": "https:\/\/blog.hakmal.com\/favicon.ico"
+      }
+    }
+  }
+</script>
+
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <link rel="stylesheet" href="/sass/main.min.199ac073c47f53d0c0640a9a3821495d0797fc7f121784904a09866e2a554839.css">
+    <link rel="stylesheet" type="text/css" href="/hugo-cite.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+    
+    <script>
+        (function() {
+            const colorSchemeKey = 'ThemeColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'ThemeColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.userColorScheme = 'dark';
+        } else {
+            document.documentElement.dataset.userColorScheme = 'light';
+        }
+    })();
+</script>
+
+
+    <body class="dark">
+        <nav class="navbar">
+    <div class="container">
+        <div class="flex">
+            <div>
+                <a class="brand" href="/">
+                    
+                    <span class="emoji">
+                        🙃
+                    </span>
+                    
+                    
+                    Dr Daft
+                    </a>
+            </div>
+            <div class="flex">
+                
+                <a href="https://hakmal.com/info">About Me</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                
+                    <button id="dark-mode-button">
+                    <svg class="light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M30.312.776C32 19 20 32 .776 30.312c8.199 7.717 21.091 7.588 29.107-.429C37.9 21.867 38.03 8.975 30.312.776z"/><path d="M30.705 15.915a1.163 1.163 0 1 0 1.643 1.641a1.163 1.163 0 0 0-1.643-1.641zm-16.022 14.38a1.74 1.74 0 0 0 0 2.465a1.742 1.742 0 1 0 0-2.465zm13.968-2.147a2.904 2.904 0 0 1-4.108 0a2.902 2.902 0 0 1 0-4.107a2.902 2.902 0 0 1 4.108 0a2.902 2.902 0 0 1 0 4.107z" fill="#FFCC4D"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M16 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm18 14s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 16s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm5.121-8.707s1.414 1.414 0 2.828s-2.828 0-2.828 0L4.878 8.708s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm21 21s1.414 1.414 0 2.828s-2.828 0-2.828 0l-1.414-1.414s-1.414-1.414 0-2.828s2.828 0 2.828 0l1.414 1.414zm-.413-18.172s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zm-21 21s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zM16 32s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2v-2z"/><circle fill="#FFD983" cx="18" cy="18" r="10"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    </button>
+                
+            </div>
+            </div>
+    </div>
+</nav>
+
+        <main>
+            
+<div class="container">
+    <article>
+        <header class="article-header">
+            <div class="thumb">
+                <div>
+                    <h1>Making an online playground</h1>
+                    <div class="post-meta">
+                        <div>
+                            
+                            
+                            By Dr Daft | <time>July 09, 2025</time>
+                            | 8 minutes
+                        </div>
+                        <div class="tags">
+                            
+                            <a href="/tags/academia/">Academia</a>
+                            
+                            <a href="/tags/play/">Play</a>
+                            
+                            <a href="/tags/technology/">Technology</a>
+                            
+                            <a href="/tags/syntax/">Syntax</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </article>
+
+    <div class="article-post">
+    <p>For a while now I&rsquo;ve been collecting snippets of code where I&rsquo;ve explored concepts, played around, or generally just attempted feebly to learn something. Some of this is from before my research days and purely from a place of curiosity. During my research I stumped across Ian Bogost&rsquo;s <em>Play anything</em> (2016). I was already exploring Bogost&rsquo;s persuasive games and alien phenomenology for my research but this book in many ways changed my perspective towards many things and also structured my outlook towards research and my practice as a designer.</p>
+<p>The full title explains this well: <em>The pleasure of limits, the uses of boredom, and the secret of games</em>. That as a whole sounds wonderful and through the many vignettes he paints of his experience with play he talks about how play is everywhere in the shape of playgrounds.</p>
+<blockquote>
+<p>&ldquo;Play isn&rsquo;t doing what we want, but doing what we can with the materials we find along the way. And fun isn&rsquo;t the experience of pleasure, but the outcome of tinkering with a small part of the world in a surprising way.&rdquo; <strong>Bogost, 2016, pg3-4</strong></p></blockquote>
+<h2 id="a-github-and-jekyll-playground">
+    <a href="#a-github-and-jekyll-playground" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    A GitHub and Jekyll Playground
+</h2>
+<p>The collection of code snippets and curious explorations were my own little playgrounds where I enacted play as these curious rituals. So I turned to Github to craft a repository for these acts of play. But I soon faced a curious question. I wanted to be able to present my play as part of a larger playground where all could be observed. Why? I&rsquo;m not really sure, but I think this is part of the play anything perspective Bogost was referring to.</p>
+<p>I didn&rsquo;t want a complicated setup and liked the simplicity and capabilities of Github Pages. This blog after all is also delivered through Github as are most of my projects and playful activities.</p>
+<h2 id="a-clean-and-simple-setup">
+    <a href="#a-clean-and-simple-setup" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    A clean and simple setup
+</h2>
+<p>I won&rsquo;t go into the details of the different iterations I went through before settling with a custom Jekyll setup. There was a lot of testing and exploration with additional learning opportunities. I&rsquo;m not a web developer just a tinkerer so here&rsquo;s my clean and simple setup for making creating a collection of curious coding playgrounds using Github and Jekyll. You can see the <a href="https://github.com/haakmal/playgrounds">Github repo</a> here but let&rsquo;s start with the folder structure.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">_data/                <span class="c1"># Metadata folder</span>
+</span></span><span class="line"><span class="cl">├── projects/         <span class="c1"># Jekyll collection for projects</span>
+</span></span><span class="line"><span class="cl">│   └── project1.yml  <span class="c1"># Metadata file for each project</span>
+</span></span><span class="line"><span class="cl">layouts/home.html     <span class="c1"># Jekyll layouts go here</span>
+</span></span><span class="line"><span class="cl">site/                 <span class="c1"># Site generated by Jekyll</span>
+</span></span><span class="line"><span class="cl">assets/style.css      <span class="c1"># Stylesheet for Jekyll site         </span>
+</span></span><span class="line"><span class="cl">projects/
+</span></span><span class="line"><span class="cl">├── project1          <span class="c1"># Individual project folder</span>
+</span></span><span class="line"><span class="cl">Gemfile               <span class="c1"># Jekyll init file</span>
+</span></span><span class="line"><span class="cl">_config.yml           <span class="c1"># Jekyll config file</span>
+</span></span><span class="line"><span class="cl">index.md              <span class="c1"># Site homepage</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>It took me a while to understand but this is essentially all there is to it, the structure is simple and easily expandable. With the settings I&rsquo;m about to share the a static website can be formed using markdown files in Github, with additional &lsquo;collections&rsquo; or project folders that are independent of the Jekyll site (or not). That&rsquo;s right, they don&rsquo;t need to be independent and you can easily treat the projects as additional pages though there is an easier setup for that.</p>
+<h2 id="jekyll-setup-step-by-step">
+    <a href="#jekyll-setup-step-by-step" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    Jekyll setup step-by-step
+</h2>
+<p>To start we&rsquo;ll prepare the index file. Since Github will use Jekyll to parse any markdown file into a HTML file, it simply needs some information in the YAML section of our markdown file. Adding the following to the <code>index.md</code> will let Jekyll know it has to parse that file, naming it index is important.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">layout</span><span class="p">:</span><span class="w"> </span><span class="l">home</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>The <code>---</code> at the start and end of a markdown file separate it from the actual content as the YAML portion. There is a list of different keys that can be called here but we can also make our own and that makes YAML very powerful. It&rsquo;s essentially a ways to serialise data to your liking.</p>
+<p>Configuring the site is done using the <code>_config.yml</code> which needs to be in our site root. For my purposes I prepared it like so.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">plugins</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">jekyll-feed</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">jekyll-seo-tag</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">collections</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">projects</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">output</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="l">/projects/:name/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">baseurl</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/playgrounds&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://haakmal.github.io&#34;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>The most important parts are the plugins which are what we need for Jekyll to load. These plugins are enough for static site purposes, there are other plugins that can be added here for further functionality such as help with making posts or a blog.</p>
+<p>The collections is what allows us to have our projects or playgrounds. Collections are a way to pull in the projects folder as independent pages or sites that can function on their own. Keeping the <code>output: true</code> is necessary. The <code>permalink</code> lets Jekyll know how to manage the site links. Finally, the <code>baseurl</code> is set as the Github repo&rsquo;s name to again to ensure all links start from the correct source.</p>
+<h2 id="the-magic-of-metadata">
+    <a href="#the-magic-of-metadata" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    The magic of metadata
+</h2>
+<p>This was a particular learning curve for me to understand how this metadata file could be setup. It&rsquo;s essentially part of the collections feature of Jekyll but it&rsquo;s also a clean way to have Github interact with Jekyll. Here&rsquo;s an example of the metadata file for a project in the repo called <a href="https://haakmal.github.io/playgrounds/projects/emojidice/">EmojiDice</a>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;EmojiDice&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;A storydice variant using emojis, good for brainstorming.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">credits</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Haider Akmal&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/projects/emojidice/&#34;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>The key&rsquo;s like <code>title</code>, <code>description</code>, etc can be called anything since they are just data points being referenced in the <code>home.html</code> layout file. The <code>url</code> key is what&rsquo;s needed to ensure the correct link is formatted. What is important to do here is to ensure the file name for this YAML metadata file is the same as the project folder. So in this case, the project folder is called <code>emojidice</code> and the metadata file is called <code>emojidice.yml</code>, Jekyll handles the rest.</p>
+<h2 id="bringing-it-all-together-in-our-layout">
+    <a href="#bringing-it-all-together-in-our-layout" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    Bringing it all together in our layout
+</h2>
+<p>Now that we have a project setup as well as its metadata, we can finally make the layout for our site. In our layout we need to be able to display our projects as that&rsquo;s the whole purpose behind this curious ritual! We are already calling <code>home.html</code> as the layout for our index file so that&rsquo;s what we have to set up in <code>layouts</code>. The structure for this template is a basic HTML page with some Jekyll hooks to pull in dynamic data, the full file can be viewed in the repo but this portion is where the magic happens.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{% for project in site.data.projects %}
+</span></span><span class="line"><span class="cl">	{% assign info = project[1] %}
+</span></span><span class="line"><span class="cl">	    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {% if info.external %}
+</span></span><span class="line"><span class="cl">	        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ info.url }}&#34;</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span><span class="p">&gt;</span>{{ info.title }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>↗<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {% else %}
+</span></span><span class="line"><span class="cl">	        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ site.baseurl }}{{ info.url }}&#34;</span><span class="p">&gt;</span>{{ info.title }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {% endif %}
+</span></span><span class="line"><span class="cl">	        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ info.description }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	        <span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>👥<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> {{ info.credits }}<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	      <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">{% endfor %}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>It&rsquo;s essentially a for loop that iterates inside an unordered list. Each new list item being made has hooks in the middle such as <code>{{ info.title }}</code>that are fetching the unique keys we setup in our metadata file for that project. The loop knows to look at <code>site.data.projects</code> as in the <code>data/projects/</code> folder for any projects then compare them against the <code>projects/</code> folder in out site root.</p>
+<p>With that setup, all that&rsquo;s left is to make it look pretty. For the design of the site I kept it all simple focusing on being just a way to represent each playground. You can find the full layout and stylsheet in<code>layouts/home.html</code> and <code>assets/style.css</code> respectively in my <a href="https://github.com/haakmal/playgrounds">playgrounds repo</a>.</p>
+<h2 id="setting-up-github-pages">
+    <a href="#setting-up-github-pages" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    Setting up Github Pages
+</h2>
+<p>At this point we have the building blocks for our static custom Jekyll site but we still have to setup Github to use its Pages feature. Github Pages does all the heavy lifting for us but in order for us to use our own custom Jekyll layouts and configurations we have to tell Github not to use it&rsquo;s own Jekyll configuration. The Github Pages feature defaults to using it&rsquo;s own Jekyll theme and configurations, this is where we need to ensure we initiate our own Jekyll configuration. You may have noticed the <code>Gemfile</code> in the repository, this is where that comes in.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="n">source</span> <span class="s2">&#34;https://rubygems.org&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">gem</span> <span class="s2">&#34;jekyll&#34;</span><span class="p">,</span> <span class="s2">&#34;~&gt; 4.3&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">gem</span> <span class="s2">&#34;jekyll-feed&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">gem</span> <span class="s2">&#34;jekyll-seo-tag&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Jekyll is Ruby based, unlike Hugo which this blog is being powered by which is Go based. It took me a while to figure out Hugo and now looking at Ruby I&rsquo;ve realised I can&rsquo;t be proficient in either! That said, there are ample resources around the internet and now with ChatGPT picking up basic skills for programming languages are quite easy. I know this much that the Gemfile is necessary to initiate our Jekyll configuration. All this file is telling Github is to pull in Jekyll without any configurations such as themes etc and instead ensure the plugins we require are pulled in.</p>
+<p>Finally, all we need to do is now upload all of this to Github and initiate Github Pages. For that we can go to the repo <em>Settings -&gt; Pages (left menu)</em> and selecting the branch we would like to deploy our repository from which in this case will be the main branch. And that&rsquo;s it! We have a static site powered by Github Pages with a custom Jekyll static site generator. The project folders can be independent HTML files with their own scripts, styles, and more as well as markdown files that will get parsed by Jekyll into HTML with whatever layout we would like them to follow.</p>
+<p>Play is truly everywhere, even in the making of this collection of playgrounds through Github. I&rsquo;ve learned a lot in the process of making this and hopefully more curious playgrounds full of design and code will be emerging in the days to come.</p>
+
+    
+    
+    </div>
+</div>
+
+<div class="container">
+    
+    <nav class="flex container suggested">
+        
+        <a rel="prev" href="/post/why-manage-knowledge/" title="Previous post (older)">
+            <span>Previous</span>
+            Why should knowledge management matter?
+            </a>
+        
+        
+        
+    </nav>
+    
+</div>
+ 
+<div class="container">
+    
+    <script src="https://giscus.app/client.js" 
+        data-repo="haakmal/blog"
+        data-repo-id="R_kgDOJFjB2g"
+        
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJFjB2s4CUu2K"
+        
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-theme="light"
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<script>
+    function setGiscusTeheme(theme) {
+        let giscus = document.querySelector('.giscus iframe');
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme
+                        }
+                    }
+                },
+                'https://giscus.app'
+            )
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://giscus.app') return;
+        setGiscusTeheme(document.documentElement.dataset.userColorScheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setGiscusTeheme(e.detail)
+    })
+</script>
+
+</div>
+
+</main>
+
+
+        </main>
+        <footer class="footer flex">
+    <section class="container">
+        <nav class="footer-links">
+            
+            <a href="/categories/">Categories</a>
+            
+            <a href="/index.xml">RSS</a>
+            
+            <a href="/tags/">Tags</a>
+            
+        </nav>
+
+        <script defer src="/static/fontawesome/fontawesome-all.js"></script>
+    </section>
+    <script defer src="/ts/features.706a523ba43e6d0427c7fdf2b9d05dbd0920d3f12942b453690b495cb2522743.js" 
+    data-enable-footnotes="true"
+    ></script>
+</footer>
+
+    </body>
+</html>
