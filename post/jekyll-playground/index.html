@@ -25,8 +25,8 @@
 
 <meta property="og:type" content="article" />
 <meta property="article:publisher" content="Haider Ali Akmal" />
-<meta property="og:article:published_time" content=2025-07-09T00:00:00Z />
-<meta property="article:published_time" content=2025-07-09T00:00:00Z />
+<meta property="og:article:published_time" content=2025-07-10T00:00:00Z />
+<meta property="article:published_time" content=2025-07-10T00:00:00Z />
 
 
   <meta property="og:article:author" content="Dr daft" />
@@ -45,11 +45,11 @@
       "@type": "Person",
       "name": "Haider Ali Akmal"
     },
-    "datePublished": "2025-07-09",
+    "datePublished": "2025-07-10",
     "description": "Using Github and Jekyll to make a space for playful design and code",
-    "wordCount":  1641 ,
+    "wordCount":  1729 ,
     "mainEntityOfPage": "True",
-    "dateModified": "2025-07-09",
+    "dateModified": "2025-07-10",
     "publisher": {
       "@type": "Organization",
       "name": "Haider Ali Akmal",
@@ -139,8 +139,8 @@
                         <div>
                             
                             
-                            By Dr Daft | <time>July 09, 2025</time>
-                            | 8 minutes
+                            By Dr Daft | <time>July 10, 2025</time>
+                            | 9 minutes
                         </div>
                         <div class="tags">
                             
@@ -186,7 +186,7 @@
     </a>
     A clean and simple setup
 </h2>
-<p>I won&rsquo;t go into the details of the different iterations I went through before settling with a custom Jekyll setup. There was a lot of testing and exploration with additional learning opportunities. I&rsquo;m not a web developer just a tinkerer so here&rsquo;s my clean and simple setup for making creating a collection of curious coding playgrounds using Github and Jekyll. You can see the <a href="https://github.com/haakmal/playgrounds">Github repo</a> here but let&rsquo;s start with the folder structure.</p>
+<p>I won&rsquo;t go into the details of the different iterations I went through before settling with a custom Jekyll setup. There was a lot of testing and exploration with additional learning opportunities. I&rsquo;m not a web developer just a tinkerer so here&rsquo;s my clean and simple setup for creating a collection of curious coding playgrounds using Github and Jekyll. You can see the <a href="https://github.com/haakmal/playgrounds">Github repo</a> here but let&rsquo;s start with the folder structure.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -215,7 +215,7 @@
 </span></span><span class="line"><span class="cl">index.md              <span class="c1"># Site homepage</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>It took me a while to understand but this is essentially all there is to it, the structure is simple and easily expandable. With the settings I&rsquo;m about to share the a static website can be formed using markdown files in Github, with additional &lsquo;collections&rsquo; or project folders that are independent of the Jekyll site (or not). That&rsquo;s right, they don&rsquo;t need to be independent and you can easily treat the projects as additional pages though there is an easier setup for that.</p>
+</div><p>It took me a while to understand but this is essentially all there is to it, the structure is simple and easily expandable. With the settings I&rsquo;m about to share a static website can be made using markdown files in Github, with additional &lsquo;collections&rsquo; or project folders that are independent of the Jekyll site; or not if you want, that&rsquo;s right, they don&rsquo;t need to be independent and you can easily treat the projects as additional pages though there is an easier setup for that.</p>
 <h2 id="jekyll-setup-step-by-step">
     <a href="#jekyll-setup-step-by-step" class="anchor">
         <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
@@ -226,7 +226,7 @@
     </a>
     Jekyll setup step-by-step
 </h2>
-<p>To start we&rsquo;ll prepare the index file. Since Github will use Jekyll to parse any markdown file into a HTML file, it simply needs some information in the YAML section of our markdown file. Adding the following to the <code>index.md</code> will let Jekyll know it has to parse that file, naming it index is important.</p>
+<p>To start we&rsquo;ll prepare the index file. Since Github will use Jekyll to parse any markdown file into HTML, it simply needs some information in the YAML section of our markdown files to get started. Adding the following to the <code>index.md</code> will let Jekyll know it has to parse that file, naming it index is important for the static site to be registered.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -239,7 +239,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>The <code>---</code> at the start and end of a markdown file separate it from the actual content as the YAML portion. There is a list of different keys that can be called here but we can also make our own and that makes YAML very powerful. It&rsquo;s essentially a ways to serialise data to your liking.</p>
+</div><p>For those curious the <code>---</code> at the start and end of a markdown file separate it from the actual content as the YAML portion where configurations and data keys can be set. There is a list of different keys that can be called here but we can also make our own and that makes YAML very powerful. It&rsquo;s essentially a way to serialise data to your liking.</p>
 <p>Configuring the site is done using the <code>_config.yml</code> which needs to be in our site root. For my purposes I prepared it like so.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -270,7 +270,7 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>The most important parts are the plugins which are what we need for Jekyll to load. These plugins are enough for static site purposes, there are other plugins that can be added here for further functionality such as help with making posts or a blog.</p>
-<p>The collections is what allows us to have our projects or playgrounds. Collections are a way to pull in the projects folder as independent pages or sites that can function on their own. Keeping the <code>output: true</code> is necessary. The <code>permalink</code> lets Jekyll know how to manage the site links. Finally, the <code>baseurl</code> is set as the Github repo&rsquo;s name to again to ensure all links start from the correct source.</p>
+<p>The collections is what allows us to have our projects or playgrounds. Collections are a way to pull in the projects folder as independent pages or sites that can function on their own. Keeping the <code>output: true</code> is necessary here for Jekyll to actually make the pages from what I understand. The <code>permalink</code> lets Jekyll know how to manage the site links between collections and the main static page. This will make sense once you see the layout template we prepare. Finally, the <code>baseurl</code> is set as the Github repo&rsquo;s name to again ensure all links start from the correct source.</p>
 <h2 id="the-magic-of-metadata">
     <a href="#the-magic-of-metadata" class="anchor">
         <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
@@ -281,7 +281,7 @@
     </a>
     The magic of metadata
 </h2>
-<p>This was a particular learning curve for me to understand how this metadata file could be setup. It&rsquo;s essentially part of the collections feature of Jekyll but it&rsquo;s also a clean way to have Github interact with Jekyll. Here&rsquo;s an example of the metadata file for a project in the repo called <a href="https://haakmal.github.io/playgrounds/projects/emojidice/">EmojiDice</a>.</p>
+<p>This was a particular learning curve for me to understand how this metadata file could be setup. I wanted to use the YAML keys as a way to store data about projects and fetch them to the static home page, essentially listing projects out. It&rsquo;s part of the collections feature of Jekyll but it&rsquo;s also a clean way to have Github interact with Jekyll. Here&rsquo;s an example of the metadata file for a project in the repo called <a href="https://haakmal.github.io/playgrounds/projects/emojidice/">EmojiDice</a>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -307,7 +307,7 @@
     </a>
     Bringing it all together in our layout
 </h2>
-<p>Now that we have a project setup as well as its metadata, we can finally make the layout for our site. In our layout we need to be able to display our projects as that&rsquo;s the whole purpose behind this curious ritual! We are already calling <code>home.html</code> as the layout for our index file so that&rsquo;s what we have to set up in <code>layouts</code>. The structure for this template is a basic HTML page with some Jekyll hooks to pull in dynamic data, the full file can be viewed in the repo but this portion is where the magic happens.</p>
+<p>Now that we have a project setup as well as its metadata, we can finally make the layout for our site. In our layout we need to be able to display our projects as that&rsquo;s the whole purpose behind this curious ritual! We are already calling <code>home.html</code> as the layout for our index file so that&rsquo;s what we have to set up in the <code>layouts</code> folder. The structure for this template is a basic HTML page with some Jekyll hooks to pull in dynamic data, the full file can be viewed in the repo but this portion is where the magic happens.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -338,7 +338,7 @@
 </span></span><span class="line"><span class="cl">{% endfor %}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>It&rsquo;s essentially a for loop that iterates inside an unordered list. Each new list item being made has hooks in the middle such as <code>{{ info.title }}</code>that are fetching the unique keys we setup in our metadata file for that project. The loop knows to look at <code>site.data.projects</code> as in the <code>data/projects/</code> folder for any projects then compare them against the <code>projects/</code> folder in out site root.</p>
+</div><p>It&rsquo;s essentially a for loop that iterates inside an unordered list. Each new list item being made has hooks in the middle such as <code>{{ info.title }}</code>that are fetching the unique keys we setup in our metadata file for that project. The loop knows to look at <code>site.data.projects</code> as in <code>site-root/data/projects/</code> folder for any projects then compare them against the <code>projects/</code> folder in our site root.</p>
 <p>With that setup, all that&rsquo;s left is to make it look pretty. For the design of the site I kept it all simple focusing on being just a way to represent each playground. You can find the full layout and stylsheet in<code>layouts/home.html</code> and <code>assets/style.css</code> respectively in my <a href="https://github.com/haakmal/playgrounds">playgrounds repo</a>.</p>
 <h2 id="setting-up-github-pages">
     <a href="#setting-up-github-pages" class="anchor">
@@ -368,7 +368,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Jekyll is Ruby based, unlike Hugo which this blog is being powered by which is Go based. It took me a while to figure out Hugo and now looking at Ruby I&rsquo;ve realised I can&rsquo;t be proficient in either! That said, there are ample resources around the internet and now with ChatGPT picking up basic skills for programming languages are quite easy. I know this much that the Gemfile is necessary to initiate our Jekyll configuration. All this file is telling Github is to pull in Jekyll without any configurations such as themes etc and instead ensure the plugins we require are pulled in.</p>
-<p>Finally, all we need to do is now upload all of this to Github and initiate Github Pages. For that we can go to the repo <em>Settings -&gt; Pages (left menu)</em> and selecting the branch we would like to deploy our repository from which in this case will be the main branch. And that&rsquo;s it! We have a static site powered by Github Pages with a custom Jekyll static site generator. The project folders can be independent HTML files with their own scripts, styles, and more as well as markdown files that will get parsed by Jekyll into HTML with whatever layout we would like them to follow.</p>
+<p>Finally, all we need to do is now upload all of this to Github and initiate Github Pages. For that we can go to the repo <em>Settings → Pages (left menu)</em> and selecting the branch we would like to deploy our repository from which in this case will be the main branch. And that&rsquo;s it! We have a static site powered by Github Pages with a custom Jekyll static site generator that iterates over additional static sites within itself! In other words, the project folders can be independent HTML files with their own scripts, styles, and more as well as markdown files that will get parsed by Jekyll into HTML with whatever layout we would like them to follow.</p>
 <p>Play is truly everywhere, even in the making of this collection of playgrounds through Github. I&rsquo;ve learned a lot in the process of making this and hopefully more curious playgrounds full of design and code will be emerging in the days to come.</p>
 
     
